@@ -14,14 +14,14 @@
 </style>
 <script>
     function eersteloop(){
-        var hetwoord = document.getElementById("invoer").value;
-        
+        var aantale = 0;
+        var hetwoord = document.getElementById("invoer").value;      
         for(var x = 0; x < hetwoord.length; x++){
-            console.log(hetwoord.charAt(x));
             if(hetwoord.charAt(x) == "e"){
-                alert("er zit een e in");
+                aantale += 1;
             }
         }
+        alert("er zit "+ aantale+" keer een e in");
    }
 </script>
 
