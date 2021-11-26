@@ -1,28 +1,29 @@
-
-<script>
-    function eersteloop(deparameter){
-        var getal1 = 5;
-        var getal2 = 7;
-        console.log(deparameter);
+<style>
+    h1{
+        background-color:gray;
+        padding:20px;
+        margin:20px;
     }
+    input{
+        color:orange;
+        font-size: 30px;
+    }
+    button{
+        font-size: 30px;
+    }
+</style>
+<script>
+    function eersteloop(){
+        var hetwoord = document.getElementById("invoer").value;
+        
+        for(var x = 0; x < hetwoord.length; x++){
+            console.log(hetwoord.charAt(x));
+            if(hetwoord.charAt(x) == "e"){
+                alert("er zit een e in");
+            }
+        }
+   }
 </script>
 
-
-
-hoi <strong>test</strong>
-<textarea cols=200 disabled=disabled>een tekst</textarea>
-<h1>stukkie tekst</h1>
-<i>ff checken</i><br>
-
-
-<input type=button value="klik hier" onclick="eersteloop(24)"></input>
-<input type=button value="klik hier" onclick="eersteloop(62)"></input>
-
-
-// Event go weer
-
-// syntaxvaardigheid
-
-// bibliotheekbekendheid referenceguide api documentation
-
-// argument of parameter         functies
+<input type=text id=invoer value="">
+<button onclick="eersteloop()">Check</button>
